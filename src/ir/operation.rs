@@ -27,6 +27,7 @@ use std::{
 };
 
 /// An operation.
+#[derive(Copy)]
 pub struct Operation<'c> {
     raw: MlirOperation,
     _context: PhantomData<&'c Context>,
